@@ -33,14 +33,14 @@ size_t binary_tree_size(const binary_tree_t *tree)
 
 	if (tree == NULL)
 		return (0);
-	n_left = binary_tree_size(tree->left);
-	n_right = binary_tree_size(tree->right);
+	n_left = binary_tree_size(tree->right);
+	n_right = binary_tree_size(tree->left);
 	return (1 + n_left + n_right);
 }
 /**
  * binary_tree_is_perfect - checks if a binary tree is perfect.
- *@tree: pointer to the root node of the tree to check.
- * Return: if tree is NULL, function must return 0.
+ *@tree: pointer to the root node of binary tree to check.
+ * Return: 1 if perfect, 0 otherwise.
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
