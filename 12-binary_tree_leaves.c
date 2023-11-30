@@ -17,8 +17,8 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 
 /**
  * binary_tree_leaves - number of leaves
- *@tree: pointer to the root node of the tree to count the number of leaves.
- * Return: If tree is NULL, the function must return 0.
+ *@tree: pointer to the root node of the binary tree to count .
+ * Return: number of leaves or 0 otherwise.
  */
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
