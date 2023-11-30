@@ -44,11 +44,10 @@ size_t binary_tree_size(const binary_tree_t *tree)
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	size_t h = 0, perfect_size = 0;
+	size_t perfect_size = 0,  h = binary_tree_height(tree);
 
 	if (tree == NULL)
 		return (0);
-	h = binary_tree_height(tree);
 	perfect_size = (1 << (h + 1)) - 1;
 	if (perfect_size == binary_tree_size(tree))
 		return (1);
